@@ -1,7 +1,8 @@
-package co.grandcircus.lab.Coffee_Shop;
+package co.grandcircus.lab.Coffee_Shop.entity;
 
-public class User {
+public class Users {
 
+	// fields
 	private String firstName;
 	private String lastName;
 	private String phoneNum;
@@ -10,9 +11,9 @@ public class User {
 	private String gender;
 
 	// Constructors
-	public User() {}
+	public Users() {}
 
-	public User(String firstName, String lastName, String phoneNum, String userEmail, String userYear, String gender) {
+	public Users(String firstName, String lastName, String phoneNum, String userEmail, String userYear, String gender) {
 		setFirstName(firstName);
 		setLastName(lastName);
 		setPhoneNum(phoneNum);

@@ -4,9 +4,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import co.grandcircus.lab.Coffee_Shop.entity.Users;
+
 @Controller
 public class CoffeeController {
-
+	
 	@RequestMapping("/")
 	public ModelAndView showIndex() {
 		ModelAndView mav = new ModelAndView("index");
@@ -32,7 +34,7 @@ public class CoffeeController {
 	}
 	
 	@RequestMapping("/user-confirm")
-		public ModelAndView showConfirm(User user) {
+		public ModelAndView showConfirm(Users user) {
 		ModelAndView mav = new ModelAndView("user-confirm");
 		return mav; 
 		}

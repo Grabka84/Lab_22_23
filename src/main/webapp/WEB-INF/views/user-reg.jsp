@@ -24,13 +24,13 @@
 			<p><label>Last Name</label><br>
 				<input name="lastName" type="text" required/></p>
 			<p><label>Phone Number</label><br>
-				<input name="phoneNum" type="tel" required/></p>
+				<input name="phoneNum" type="tel"/></p>
 			<p><label>E-Mail</label><br>
-				<input name="userEmail" type="email" required/></p>
+				<input name="userEmail" type="email"/></p>
 			<p><label>Date of Birth</label><br>
-				<input name="userYear" type="date" min="1900-01-01" max="2019-01-01" required/></p>
+				<input name="userYear" type="date" min="1900-01-01" max="2019-01-01"/></p>
 			<p>
-				<input type="radio" name="gender" value="male" checked required> Male<br>
+				<input type="radio" name="gender" value="male" checked> Male<br>
 	 			<input type="radio" name="gender" value="female"> Female<br>
 	  			<input type="radio" name="gender" value="other"> Other
 	  		</p>

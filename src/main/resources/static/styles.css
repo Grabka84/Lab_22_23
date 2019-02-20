@@ -4,8 +4,19 @@ body {
 	background: #d0ac55;
 }
 
+.body {
+	font-size: 16px;
+	font-family: "Times New Roman", Times, serif;
+	text-align: left;
+	width: 100%;
+}
+
+.form {
+	
+}
+
 header {
-	font-size: 32px;
+	font-size: 28px;
 	font-family: "Times New Roman", Times, serif;
 	text-align: center;
 	width: 100%;

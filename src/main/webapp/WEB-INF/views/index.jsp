@@ -18,11 +18,11 @@
 	</div>
 	
 	<header>
-		<h2>Welcome to Grabka's Coffee Shop</h2> 
-		<h3>"We Get Roasted!"</h3>
+		<h3>Welcome to Grabka's Coffee Shop</h3> 
+		<h4>"Let's Get Roasted!"</h4>
 	</header>
 	
-	<div>
+	<div class = "body">
 	
 	</div>
 </body>
