@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import co.grandcircus.lab.Coffee_Shop.dao.ItemsDao;
+import co.grandcircus.lab.Coffee_Shop.dao.UsersDao;
 import co.grandcircus.lab.Coffee_Shop.entity.Items;
 import co.grandcircus.lab.Coffee_Shop.entity.Users;
 
@@ -17,9 +18,12 @@ public class CoffeeController {
 	@Autowired
 	private ItemsDao itemsDao;
 	
+	@Autowired
+	private UsersDao usersDao;
+	
 	@RequestMapping("/")
 	public ModelAndView showIndex() {
-		List<Items> itemList = itemsDao.findAll();
+		List<Items> itemList = itemsDao.findAll(); // creates the list of items before going to index since we want to display
 		return new ModelAndView("index", "items", itemList);
 	}
 	
@@ -43,7 +47,8 @@ public class CoffeeController {
 	
 	@RequestMapping("/user-confirm")
 		public ModelAndView showConfirm(Users user) {
-		ModelAndView mav = new ModelAndView("user-confirm");
+		usersDao.create(user);
+		ModelAndView mav = new ModelAndView("user-confirm", "users", user);
 		return mav; 
 		}
 }

@@ -16,7 +16,7 @@
 		<a href="/contact"><button type="button">Contact Us</button></a>
 	</div>
 	
-	Welcome ${ user.firstName } ${ user.lastName }, you have successfully registered!
+	Welcome ${ users.firstName } ${ users.lastName }, you have successfully registered!
 	
 </body>
 </html>
