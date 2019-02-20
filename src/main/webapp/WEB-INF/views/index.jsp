@@ -7,6 +7,7 @@
 <meta charset="ISO-8859-1">
 <title>Cafe Grabka - Index</title>
 <link rel="stylesheet" href="/styles.css"/>
+
 </head>
 <body>
 
@@ -23,7 +24,24 @@
 	</header>
 	
 	<div class = "body">
-	
+		<h2>Items List</h2>
+		<table class = "list">
+		<thead>
+			<tr>
+				<th>Name</th><th>Description</th><th>Price</th><th>QOH</th>
+			</tr>
+		</thead>
+		<tbody>
+			<c:forEach var="item" items="${items}">
+				<tr>
+					<td>${item.name}</td>
+					<td>${item.description}</td>
+					<td>${item.price}</td>
+					<td>${item.quantity}</td>
+				</tr>
+			</c:forEach>
+		</tbody>
+		</table>
 	</div>
 </body>
 </html>

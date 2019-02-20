@@ -3,16 +3,16 @@ package co.grandcircus.lab.Coffee_Shop.entity;
 public class Items {
 
 	// fields
-	private long id;
+	private Long id;
 	private String name;
 	private String description;
-	private int quantity;
-	private double price;
+	private Integer quantity;
+	private Double price;
 	
 	// Constructors
 	public Items() {}
 	
-	public Items(long id, String name, String description, int quantity, double price) {
+	public Items(Long id, String name, String description, int quantity, double price) {
 		setId(id);
 		setName(name);
 		setDescription(description);
@@ -37,27 +37,27 @@ public class Items {
 		this.description = description;
 	}
 	
-	public int getQuantity() {
+	public Integer getQuantity() {
 		return quantity;
 	}
 	
-	public void setQuantity(int quantity) {
+	public void setQuantity(Integer quantity) {
 		this.quantity = quantity;
 	}
 	
-	public double getPrice() {
+	public Double getPrice() {
 		return price;
 	}
 	
-	public void setPrice(double price) {
+	public void setPrice(Double price) {
 		this.price = price;
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	

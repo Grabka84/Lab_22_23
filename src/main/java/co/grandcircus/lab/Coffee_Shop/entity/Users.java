@@ -3,7 +3,7 @@ package co.grandcircus.lab.Coffee_Shop.entity;
 public class Users {
 
 	// fields
-	private long id;
+	private Long id;
 	private String firstName;
 	private String lastName;
 	private String phoneNum;
@@ -14,7 +14,7 @@ public class Users {
 	// Constructors
 	public Users() {}
 
-	public Users(long id, String firstName, String lastName, String phoneNum, String userEmail, String userYear, String gender) {
+	public Users(Long id, String firstName, String lastName, String phoneNum, String userEmail, String userYear, String gender) {
 		setId(id);
 		setFirstName(firstName);
 		setLastName(lastName);
@@ -73,7 +73,7 @@ public class Users {
 		this.gender = gender;
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 

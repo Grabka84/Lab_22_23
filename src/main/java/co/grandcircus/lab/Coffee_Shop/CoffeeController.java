@@ -1,18 +1,26 @@
 package co.grandcircus.lab.Coffee_Shop;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import co.grandcircus.lab.Coffee_Shop.dao.ItemsDao;
+import co.grandcircus.lab.Coffee_Shop.entity.Items;
 import co.grandcircus.lab.Coffee_Shop.entity.Users;
 
 @Controller
 public class CoffeeController {
 	
+	@Autowired
+	private ItemsDao itemsDao;
+	
 	@RequestMapping("/")
 	public ModelAndView showIndex() {
-		ModelAndView mav = new ModelAndView("index");
-		return mav;
+		List<Items> itemList = itemsDao.findAll();
+		return new ModelAndView("index", "items", itemList);
 	}
 	
 	@RequestMapping("/user-reg")
