@@ -10,14 +10,15 @@
 <body>
 
 	<div class = "navbar">
-		<a href="/"><button type="button">Home</button></a>
-		<a href="/user-reg"><button type="button">User Registration</button></a>
-		<a href="/about"><button type="button">About Us</button></a>
-		<a href="/contact"><button type="button">Contact Us</button></a>
+		<a href="/"><button class ="navbut" type="button">Home</button></a>
+		<a href="/user-reg"><button class ="navbut" type="button">User Registration</button></a>
+		<a href="/about"><button class ="navbut" type="button">About Us</button></a>
+		<a href="/contact"><button class ="navbut" type="button">Contact Us</button></a>
+		<a href="/admin"><button class ="navbut" type="button">Admin</button></a>
 	</div>
 
 	<header>
-		<h3>Contact Us</h3> 
+		<h3>Contact Grabka Coffee</h3> 
 		<h4>We'd love to hear from you!</h4>
 	</header>
 	
@@ -28,6 +29,10 @@
   		<li>Instagram: @GrabkaCoffee</li>
   		<li>Email: SweetWebsite@GrabkaCoffee.na</li>
 	</ul>
+	</div>
+	
+	<div>
+		<img src="/images/coffeestock.jpg" alt="Coffee cup surrounded by beans" class = "stock">
 	</div>
 
 </body>

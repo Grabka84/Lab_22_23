@@ -1,15 +1,13 @@
 package co.grandcircus.lab.Coffee_Shop;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import co.grandcircus.lab.Coffee_Shop.dao.ItemsDao;
 import co.grandcircus.lab.Coffee_Shop.dao.UsersDao;
-import co.grandcircus.lab.Coffee_Shop.entity.Items;
 import co.grandcircus.lab.Coffee_Shop.entity.Users;
 
 @Controller
@@ -23,8 +21,9 @@ public class CoffeeController {
 	
 	@RequestMapping("/")
 	public ModelAndView showIndex() {
-		List<Items> itemList = itemsDao.findAll(); // creates the list of items before going to index since we want to display
-		return new ModelAndView("index", "items", itemList);
+		ModelAndView mav = new ModelAndView("index");
+		mav.addObject("items", itemsDao.findAll());
+		return mav;
 	}
 	
 	@RequestMapping("/user-reg")
@@ -45,7 +44,7 @@ public class CoffeeController {
 		return mav; 
 	}
 	
-	@RequestMapping("/user-confirm")
+	@PostMapping("/user-confirm")
 		public ModelAndView showConfirm(Users user) {
 		usersDao.create(user);
 		ModelAndView mav = new ModelAndView("user-confirm", "users", user);

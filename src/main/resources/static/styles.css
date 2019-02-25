@@ -9,10 +9,28 @@ body {
 	font-family: "Times New Roman", Times, serif;
 	text-align: left;
 	width: 100%;
+	line-height: 1.5;
+	width: 950px;
+}
+
+.list {
+	width: 950px;
+	border: 2px solid black;
+	padding: 5px;
 }
 
 .form {
 	
+}
+
+.stock {
+	width: 950px;
+}
+
+th {
+	text-align:center;
+	border-bottom: 1px solid black; 
+	padding: 5px;	
 }
 
 header {
@@ -33,7 +51,8 @@ header {
 	color: red;
 	text-decoration: underline;
 }
-button {
+
+button.navbut {
   background-color: #663300;
   border: none;
   color: white;
@@ -41,6 +60,18 @@ button {
   text-align: center;
   font-size: 16px;
   cursor: pointer;
+  width: 175px;
+  margin: 5px;
+}
+
+button.additem {
+background-color: #663300;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  width: 50px;
 }
 
 button:hover {

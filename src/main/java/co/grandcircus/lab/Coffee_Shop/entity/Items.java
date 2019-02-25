@@ -1,18 +1,29 @@
 package co.grandcircus.lab.Coffee_Shop.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+@Entity
 public class Items {
 
-	// fields
+	// Fields
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
 	private String description;
 	private Integer quantity;
 	private Double price;
+	@ManyToOne
+	private cartitems cartitems; // items in cart
 	
 	// Constructors
 	public Items() {}
 	
-	public Items(Long id, String name, String description, int quantity, double price) {
+	public Items(Long id, String name, String description, Integer quantity, Double price) {
 		setId(id);
 		setName(name);
 		setDescription(description);
@@ -60,5 +71,5 @@ public class Items {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	
+
 }

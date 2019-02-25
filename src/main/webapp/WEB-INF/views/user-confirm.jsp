@@ -10,10 +10,11 @@
 <body>
 
 	<div class = "navbar">
-		<a href="/"><button type="button">Home</button></a>
-		<a href="/user-reg"><button type="button">User Registration</button></a>
-		<a href="/about"><button type="button">About Us</button></a>
-		<a href="/contact"><button type="button">Contact Us</button></a>
+		<a href="/"><button class ="navbut" type="button">Home</button></a>
+		<a href="/user-reg"><button class ="navbut" type="button">User Registration</button></a>
+		<a href="/about"><button class ="navbut" type="button">About Us</button></a>
+		<a href="/contact"><button class ="navbut" type="button">Contact Us</button></a>
+		<a href="/admin"><button class ="navbut" type="button">Admin</button></a>
 	</div>
 	
 	Welcome ${ users.firstName } ${ users.lastName }, you have successfully registered!

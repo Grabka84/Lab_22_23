@@ -10,14 +10,15 @@
 <body>
 
 	<div class = "navbar">
-		<a href="/"><button type="button">Home</button></a>
-		<a href="/user-reg"><button type="button">User Registration</button></a>
-		<a href="/about"><button type="button">About Us</button></a>
-		<a href="/contact"><button type="button">Contact Us</button></a>
+		<a href="/"><button class ="navbut" type="button">Home</button></a>
+		<a href="/user-reg"><button class ="navbut" type="button">User Registration</button></a>
+		<a href="/about"><button class ="navbut" type="button">About Us</button></a>
+		<a href="/contact"><button class ="navbut" type="button">Contact Us</button></a>
+		<a href="/admin"><button class ="navbut" type="button">Admin</button></a>
 	</div>
 	
 	<header>
-		<h3>Grabka's Coffee Shop About Us</h3> 
+		<h3>About Grabka Coffee</h3> 
 		<h4>"Let's Get Roasted!"</h4>
 	</header>
 	
@@ -29,6 +30,10 @@
 		<p>We sell whole bean coffee by the pound and have an espresso bar in store. 
 		We keep our product dry frozen, which allows our coffee to maintain maximum freshness. 
 		This allows our drinkers to enjoy that same great Grabka Coffee flavour at home.</p>
+	</div>
+	
+	<div>
+		<img src="/images/coffeestock.jpg" alt="Coffee cup surrounded by beans" class = "stock">
 	</div>
 
 </body>
