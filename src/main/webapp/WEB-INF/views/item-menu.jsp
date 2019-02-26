@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Cafe Grabka - User Confirmation</title>
+<title>Cafe Grabka - Items menu</title>
 <link rel="stylesheet" href="/styles.css"/>
 </head>
 <body>
@@ -19,12 +19,29 @@
 	</div>
 	
 	<div class = "body">
-	<p>Welcome ${ users.fname } ${ users.lname }, you have successfully registered!</p>
-	<p>Now that you're registered, feel free to browse the rest of the site!</p>
-	</div>	
+		<h2>Inventory List</h2>
+		<p>In the <b>Inventory</b> menu, you can buy items from our current inventory on hand, and admins can enter the inventory management system</p>
+		<table class = "list">
+		<thead>
+			<tr>
+				<th>Name</th><th>Description</th><th>Price</th>
+			</tr>
+		</thead>
+		<tbody>
+			<c:forEach var="item" items="${items}">
+				<tr>
+					<td>${item.name}</td>
+					<td>${item.description}</td>
+					<td>${item.price}</td>
+					<td><a href="/add-item-to-cart"><button class="additem">Buy</button></a>
+				</tr>
+			</c:forEach>
+		</tbody>
+		</table>
+	</div>
 	
-	<div>
-		<img src="/images/coffeestock.jpg" alt="Coffee cup surrounded by beans" class = "stock">
+	<div class = "body">
+		<a href="/item-edit"><button class ="navbut">Inventory admin</button></a>
 	</div>
 
 </div>

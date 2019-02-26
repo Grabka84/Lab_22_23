@@ -1,25 +1,24 @@
 package co.grandcircus.lab.Coffee_Shop.entity;
 
-import java.util.Set;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class cartitems {
 
 	// Fields
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String itemname;
 	private Double itemprice;
 	private Integer itemquan;
-	@OneToMany(mappedBy="cartitems")
-	private Set<Items> cartitems; // items in cart
+	@ManyToOne
+	private Items item;
+	@ManyToOne
+	private Users user;
 	
 	// constructors
 	public cartitems() {}
@@ -30,6 +29,7 @@ public class cartitems {
 		setItemprice(itemprice);
 		setItemquan(itemquan);
 	}
+	
 	// getters and setters
 	public void setId(Long id){
 		this.id = id;
@@ -54,11 +54,5 @@ public class cartitems {
 	}
 	public void setItemquan(Integer itemquan) {
 		this.itemquan = itemquan;
-	}
-	public Set<Items> getItems(){
-		return cartitems;
-	}
-	public void setItems(Set<Items> cartitems) {
-		this.cartitems = cartitems;
 	}
 }

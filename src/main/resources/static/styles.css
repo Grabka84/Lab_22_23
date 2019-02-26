@@ -4,6 +4,10 @@ body {
 	background: #d0ac55;
 }
 
+.container {
+	width: 950px;
+}
+
 .body {
 	font-size: 16px;
 	font-family: "Times New Roman", Times, serif;
@@ -65,13 +69,23 @@ button.navbut {
 }
 
 button.additem {
-background-color: #663300;
+  background-color: #663300;
   border: none;
   color: white;
   text-align: center;
   font-size: 12px;
   cursor: pointer;
   width: 50px;
+}
+
+button.menu {
+  background-color: #663300;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  width: 125px;
 }
 
 button:hover {

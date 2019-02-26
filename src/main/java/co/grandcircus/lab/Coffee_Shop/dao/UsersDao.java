@@ -22,7 +22,7 @@ public class UsersDao {
 	}
 	
 	public List<Users> findAll() {
-		return em.createQuery("from users order by lname", Users.class).getResultList();
+		return em.createQuery("FROM Users", Users.class).getResultList();
 	}
 	
 	public void create(Users users) {

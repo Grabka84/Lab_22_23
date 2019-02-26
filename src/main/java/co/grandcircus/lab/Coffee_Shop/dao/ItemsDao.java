@@ -23,7 +23,7 @@ public class ItemsDao {
 	}
 	
 	public List<Items> findAll() {
-		return em.createQuery("from items", Items.class).getResultList();
+		return em.createQuery("FROM Items", Items.class).getResultList();
 	}
 	
 	public List<cartitems> findByCartitems(cartitems cartitems) {

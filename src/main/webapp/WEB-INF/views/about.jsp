@@ -8,13 +8,13 @@
 <link rel="stylesheet" href="/styles.css"/>
 </head>
 <body>
-
+<div class = "container">
 	<div class = "navbar">
 		<a href="/"><button class ="navbut" type="button">Home</button></a>
-		<a href="/user-reg"><button class ="navbut" type="button">User Registration</button></a>
+		<a href="/user-menu"><button class ="navbut" type="button">Users</button></a>
+		<a href="/item-menu"><button class ="navbut" type="button">Inventory</button></a>
 		<a href="/about"><button class ="navbut" type="button">About Us</button></a>
 		<a href="/contact"><button class ="navbut" type="button">Contact Us</button></a>
-		<a href="/admin"><button class ="navbut" type="button">Admin</button></a>
 	</div>
 	
 	<header>
@@ -35,6 +35,7 @@
 	<div>
 		<img src="/images/coffeestock.jpg" alt="Coffee cup surrounded by beans" class = "stock">
 	</div>
-
+	
+</div>
 </body>
 </html>

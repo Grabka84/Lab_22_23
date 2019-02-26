@@ -1,11 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Cafe Grabka - User Confirmation</title>
+<title>Cafe Grabka - User Menu</title>
 <link rel="stylesheet" href="/styles.css"/>
 </head>
 <body>
@@ -18,15 +17,14 @@
 		<a href="/contact"><button class ="navbut" type="button">Contact Us</button></a>
 	</div>
 	
+	<h2>User Menu</h2>
 	<div class = "body">
-	<p>Welcome ${ users.fname } ${ users.lname }, you have successfully registered!</p>
-	<p>Now that you're registered, feel free to browse the rest of the site!</p>
-	</div>	
-	
-	<div>
-		<img src="/images/coffeestock.jpg" alt="Coffee cup surrounded by beans" class = "stock">
+		<p>In the <b>Users</b> menu, you can login, register as a new user, edit your own user information, and admins can edit all users</p>
+		<br><a href="/user-reg"><button class ="menu">Register a new user</button></a>
+		<br><a href="/user-edit"><button class ="menu">Edit current user</button></a>
+		<br><a href="/user-admin"><button class ="menu">Edit all users</button></a>
 	</div>
-
+	
 </div>
 </body>
 </html>
